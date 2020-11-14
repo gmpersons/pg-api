@@ -43,9 +43,9 @@ SELECT
       )
     ) [1] :: text :: bigint
     ELSE n_live_tup :: bigint
-  END AS live_row_count,
-  n_dead_tup :: bigint AS dead_row_count,
-  n_mod_since_analyze :: bigint AS rows_mod_since_analyze,
+  END AS live_row_count_estimate,
+  n_dead_tup :: bigint AS dead_row_count_estimate,
+  n_mod_since_analyze :: bigint AS rows_mod_since_analyze_estimate,
   last_vacuum,
   last_autovacuum,
   last_analyze,
